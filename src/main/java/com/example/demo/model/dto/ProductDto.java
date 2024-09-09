@@ -1,0 +1,83 @@
+package com.example.demo.model.dto;
+
+/**
+ * Data Transfer Object (DTO) for transferring product information.
+ */
+public class ProductDto {
+    private String id;
+    private String nameProduct;
+    private float priceProduct;
+
+    /**
+     * Default constructor.
+     */
+    public ProductDto() {
+    }
+
+    /**
+     * Constructs a new ProductDto with the specified details.
+     *
+     * @param id the unique identifier for this product
+     * @param nameProduct the name of the product
+     * @param priceProduct the price of the product
+     */
+    public ProductDto(String id, String nameProduct, float priceProduct) {
+        this.id = id;
+        this.nameProduct = nameProduct;
+        this.priceProduct = priceProduct;
+    }
+
+    /**
+     * Gets the unique identifier of the product.
+     *
+     * @return the unique identifier of the product
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * Sets the unique identifier of the product.
+     *
+     * @param id the new unique identifier for the product
+     */
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    /**
+     * Gets the name of the product.
+     *
+     * @return the name of the product
+     */
+    public String getNameProduct() {
+        return nameProduct;
+    }
+
+    /**
+     * Sets the name of the product.
+     *
+     * @param nameProduct the new name for the product
+     */
+    public void setNameProduct(String nameProduct) {
+        this.nameProduct = nameProduct;
+    }
+
+    /**
+     * Gets the price of the product.
+     *
+     * @return the price of the product
+     */
+    public float getPriceProduct() {
+        return priceProduct;
+    }
+
+    /**
+     * Sets the price of the product.
+     *
+     * @param priceProduct the new price for the product
+     */
+    public void setPriceProduct(float priceProduct) {
+        this.priceProduct = priceProduct;
+    }
+}
